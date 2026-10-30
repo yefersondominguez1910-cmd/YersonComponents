@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yerson Components | Computadores gamer y componentes de alta gama</title>
+    <meta
+      name="description"
+      content="Computadores gamer, tarjetas gráficas NVIDIA RTX, procesadores Intel y AMD, memoria Corsair y periféricos. Precios en COP y pedidos por WhatsApp."
+    />
+    <meta name="theme-color" content="#0B0714" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yerson Components | Hardware gamer de alta gama" />
+    <meta
+      property="og:description"
+      content="Computadores gamer y componentes de NVIDIA, Intel, AMD, ASUS ROG, MSI y Corsair."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B0714'/%3E%3Cpath d='M16 6l9 5.2v10.4L16 26.8 7 21.6V11.2z' fill='none' stroke='%238B5CF6' stroke-width='2.4'/%3E%3Cpath d='M12 20V12l8 8v-8' fill='none' stroke='%2306B6D4' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="#inicio" aria-label="Yerson Components, ir al inicio">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8B5CF6" />
+                <stop offset="1" stop-color="#06B6D4" />
+              </linearGradient>
+            </defs>
+            <path d="M16 3l11 6.35v12.7L16 29 5 22.05V9.35z" fill="none" stroke="url(#brand-grad)" stroke-width="2.4" stroke-linejoin="round" />
+            <path d="M11 21V11l10 10V11" fill="none" stroke="#06B6D4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="brand-name">YERSON<span class="accent">COMPONENTS</span></span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#catalogo" id="nav-offers">Ofertas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="cart-button" id="cart-toggle" aria-label="Abrir carrito">
+            <span class="icon-slot" data-icon="cart"></span>
+            <span class="cart-count" id="cart-count" hidden>0</span>
+          </button>
+          <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Hardware gamer de alta gama</span>
+            <h1>Equipos que <span class="gradient-text">dominan</span> cada partida</h1>
+            <p class="lead">
+              Computadores gamer y componentes de NVIDIA, Intel, AMD, ASUS ROG, MSI y Corsair. Precios en pesos
+              colombianos y pedidos directos por WhatsApp.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#catalogo">Explorar catálogo</a>
+              <a class="btn btn-ghost btn-lg" href="#catalogo" id="hero-offers">Ver ofertas</a>
+            </div>
+            <dl class="hero-stats">
+              <div><dt>Productos</dt><dd id="stat-products">0</dd></div>
+              <div><dt>Marcas</dt><dd>6</dd></div>
+              <div><dt>Pedido</dt><dd>WhatsApp</dd></div>
+            </dl>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="hero-card glass">
+              <div id="hero-art" class="hero-art"></div>
+              <p class="hero-card-caption">Destacado: PC Gamer MSI Infinite</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="catalogo" aria-labelledby="catalogo-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">Catálogo</span>
+            <h2 id="catalogo-title">Encuentra tu próxima mejora</h2>
+            <p>Busca, filtra y ordena. Los resultados se actualizan al instante.</p>
+          </header>
+
+          <div class="catalog-layout">
+            <aside class="filters glass" aria-label="Filtros de productos">
+              <div class="filters-head">
+                <h3>Filtros</h3>
+                <button type="button" class="btn btn-ghost btn-sm" id="reset-filters">Limpiar</button>
+              </div>
+              <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters-body">
+                Mostrar filtros
+              </button>
+              <div class="filters-body" id="filters-body">
+                <label class="field">
+                  <span class="field-label">Buscar</span>
+                  <div class="search-field">
+                    <span class="icon-slot" data-icon="search" aria-hidden="true"></span>
+                    <input type="search" id="search-input" placeholder="RTX, Ryzen, ROG..." autocomplete="off" />
+                  </div>
+                </label>
+                <div class="field">
+                  <span class="field-label" id="category-label">Categoría</span>
+                  <div class="chips" id="category-chips" role="group" aria-labelledby="category-label"></div>
+                </div>
+                <label class="field">
+                  <span class="field-label">Precio</span>
+                  <select id="price-filter"></select>
+                </label>
+                <div class="toggles">
+                  <label class="switch">
+                    <input type="checkbox" id="filter-available" />
+                    <span>Solo disponibles</span>
+                  </label>
+                  <label class="switch">
+                    <input type="checkbox" id="filter-offers" />
+                    <span>Solo ofertas</span>
+                  </label>
+                </div>
+              </div>
+            </aside>
+
+            <div class="catalog-main">
+              <div class="catalog-toolbar">
+                <p class="results-count" id="results-count" aria-live="polite"></p>
+                <label class="field field-inline">
+                  <span class="field-label">Ordenar por</span>
+                  <select id="sort-select"></select>
+                </label>
+              </div>
+              <div class="product-grid" id="product-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contacto" aria-labelledby="contacto-title">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <span class="eyebrow">Contacto</span>
+            <h2 id="contacto-title">Hablemos de tu próximo equipo</h2>
+            <p>
+              Resolvemos dudas de compatibilidad, te ayudamos a elegir componentes y recibimos tu pedido por WhatsApp.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="icon-slot" data-icon="mail" aria-hidden="true"></span>
+                <a href="mailto:yefersondominguez1910@gmail.com">yefersondominguez1910@gmail.com</a>
+              </li>
+              <li>
+                <span class="icon-slot" data-icon="message" aria-hidden="true"></span>
+                <a href="https://wa.me/573022862592" target="_blank" rel="noopener">+57 302 286 2592</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form glass reveal" id="contact-form">
+            <label class="field">
+              <span class="field-label">Nombre</span>
+              <input name="name" type="text" autocomplete="name" maxlength="80" required />
+              <small class="field-error" data-error-for="name"></small>
+            </label>
+            <label class="field">
+              <span class="field-label">Correo</span>
+              <input name="email" type="email" autocomplete="email" maxlength="120" required />
+              <small class="field-error" data-error-for="email"></small>
+            </label>
+            <label class="field">
+              <span class="field-label">Mensaje</span>
+              <textarea name="message" rows="4" maxlength="600" required></textarea>
+              <small class="field-error" data-error-for="message"></small>
+            </label>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar por WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Yerson Components · Hardware gamer en pesos colombianos</p>
+        <p>yefersondominguez1910@gmail.com · +57 302 286 2592</p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/573022862592"
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribir por WhatsApp"
+    >
+      <span class="icon-slot" data-icon="message" aria-hidden="true"></span>
+    </a>
+
+    <dialog id="product-dialog" class="dialog dialog-sheet" aria-labelledby="product-dialog-title"></dialog>
+
+    <dialog id="cart-dialog" class="dialog dialog-drawer" aria-labelledby="cart-title">
+      <div class="drawer">
+        <header class="dialog-head">
+          <div>
+            <span class="eyebrow">Tu selección</span>
+            <h2 id="cart-title">Carrito de compras</h2>
+          </div>
+          <button type="button" class="icon-btn" data-close-dialog aria-label="Cerrar carrito">
+            <span class="icon-slot" data-icon="close"></span>
+          </button>
+        </header>
+        <div class="dialog-body" id="cart-body"></div>
+        <footer class="dialog-foot" id="cart-footer" hidden>
+          <div class="total-row">
+            <span>Subtotal</span>
+            <strong id="cart-subtotal">$0</strong>
+          </div>
+          <p class="foot-note">Los cupones y el resumen final se revisan antes de confirmar.</p>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="cart-checkout">Finalizar pedido</button>
+          <button type="button" class="btn btn-ghost btn-block" id="cart-clear">Vaciar carrito</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog id="summary-dialog" class="dialog dialog-sheet" aria-labelledby="summary-title">
+      <div class="summary">
+        <header class="dialog-head">
+          <div>
+            <span class="eyebrow">Paso final</span>
+            <h2 id="summary-title">Resumen del pedido</h2>
+          </div>
+          <button type="button" class="icon-btn" data-close-dialog aria-label="Cerrar resumen">
+            <span class="icon-slot" data-icon="close"></span>
+          </button>
+        </header>
+        <div class="dialog-body">
+          <ul class="summary-list" id="summary-items"></ul>
+
+          <form class="coupon-form" id="coupon-form">
+            <label class="field">
+              <span class="field-label">Cupón de descuento</span>
+              <div class="coupon-row">
+                <input id="coupon-input" name="coupon" type="text" autocomplete="off" maxlength="20" placeholder="Ej: GAMER10" />
+                <button type="submit" class="btn btn-ghost">Aplicar</button>
+              </div>
+            </label>
+            <p class="form-message" id="coupon-message" aria-live="polite"></p>
+          </form>
+
+          <dl class="totals">
+            <div>
+              <dt>Subtotal</dt>
+              <dd id="sum-subtotal">$0</dd>
+            </div>
+            <div>
+              <dt>Ahorro en ofertas</dt>
+              <dd id="sum-offers" class="is-saving">$0</dd>
+            </div>
+            <div id="sum-coupon-row" hidden>
+              <dt>
+                <span id="sum-coupon-label"></span>
+                <button type="button" class="link-btn" id="coupon-remove">Quitar</button>
+              </dt>
+              <dd id="sum-coupon" class="is-saving">$0</dd>
+            </div>
+            <div class="totals-final">
+              <dt>Total</dt>
+              <dd id="sum-total">$0</dd>
+            </div>
+          </dl>
+        </div>
+        <footer class="dialog-foot">
+          <button type="button" class="btn btn-ghost btn-lg btn-block" data-close-dialog>Volver al catálogo</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="confirm-order">Confirmar pedido por WhatsApp</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
